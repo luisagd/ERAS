@@ -1,0 +1,15 @@
+.container {
+  max-width: 200px;
+  margin: auto;
+}
+
+.svg-circle:hover + .svg-text-group {
+  opacity: 0;
+}
+@font-face {
+  font-family: "Comic Sans MS";
+  src:
+    local("Comic Sans MS"),
+    local("ComicSansMS"),
+    url("https://fonts.cdnfonts.com/s/17996/ComicSansMS.woff") format("woff");
+}
