@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: #e8e8e8;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+main {
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 24px;
+}
+
+#search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+#location-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#search-form button {
+  padding: 10px 20px;
+  background: #2c2c2c;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#search-form button:hover {
+  background: #444;
+}
+
+#loading {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+#error {
+  color: #d32f2f;
+  font-size: 1rem;
+}
+
+#weather {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+}
+
+#weather h2 {
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.condition {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.details {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.hidden {
+  display: none;
+}
