@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo</title>
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <h1>Todo</h1>
+      <div id="project-list"></div>
+      <button id="add-project-btn">+ New Project</button>
+    </aside>
+    <main id="main">
+      <header id="main-header">
+        <h2 id="project-title"></h2>
+        <button id="add-todo-btn">+ Add Todo</button>
+      </header>
+      <div id="todo-list"></div>
+    </main>
+  </div>
+
+  <dialog id="todo-dialog">
+    <form id="todo-form" method="dialog">
+      <h3 id="todo-dialog-title">New Todo</h3>
+      <label>Title <input type="text" id="todo-title" required></label>
+      <label>Description <textarea id="todo-desc"></textarea></label>
+      <label>Due Date <input type="date" id="todo-date"></label>
+      <label>Priority
+        <select id="todo-priority">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <div class="dialog-buttons">
+        <button type="button" id="todo-cancel">Cancel</button>
+        <button type="submit">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="project-dialog">
+    <form id="project-form" method="dialog">
+      <h3>New Project</h3>
+      <label>Name <input type="text" id="project-name" required></label>
+      <div class="dialog-buttons">
+        <button type="button" id="project-cancel">Cancel</button>
+        <button type="submit">Create</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>
